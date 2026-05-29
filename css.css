@@ -1,0 +1,352 @@
+/* ========== RESET & BIẾN ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brown: #3b2a25;
+  --brown-light: #5e3e35;
+  --gold: #c28a3e;
+  --gold-light: #e0b07a;
+  --cream: #fef7e8;
+  --gray: #4e4e4e;
+  --gray-light: #7a6e66;
+  --bg-warm: #faf3e8;
+  --white: #ffffff;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: system-ui, 'Segoe UI', 'Inter', -apple-system, 'Roboto', sans-serif;
+  background: var(--white);
+  color: #2c2c2c;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ========== HEADER & NAV ========== */
+header {
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(2px);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+  color: var(--brown);
+}
+
+.logo span {
+  color: var(--gold);
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--brown);
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+/* ========== BUTTON ========== */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: none;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #b0702c;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: white;
+}
+
+/* ========== PAGES (CHUYỂN TRANG) ========== */
+.page {
+  display: none;
+  animation: fade 0.3s ease;
+}
+
+.page.active-page {
+  display: block;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== HERO ========== */
+.hero {
+  background: linear-gradient(115deg, #f4e9dd, #f8efdf);
+  text-align: center;
+  padding: 4rem 1.5rem;
+  border-radius: 0 0 32px 32px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--brown);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--gray);
+  max-width: 600px;
+  margin: 0 auto 1.8rem;
+}
+
+/* ========== SECTIONS ========== */
+.section {
+  padding: 3rem 0;
+}
+
+.section-alt {
+  background: var(--bg-warm);
+}
+
+.section h2 {
+  font-size: 1.9rem;
+  color: var(--brown);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.3px;
+}
+
+.section > .container > p {
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+/* ========== GRID & CARD ========== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 28px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: var(--shadow);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(194, 138, 62, 0.12);
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.35rem;
+  margin: 0.5rem 0 0.75rem;
+  color: var(--brown-light);
+}
+
+.card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 1.2rem;
+  border-top: 1px dashed #e2dcd5;
+  padding-top: 0.75rem;
+  width: 100%;
+}
+
+/* ========== TRANG ABOUT – STATS ========== */
+.card > div:first-child:not(.icon) {
+  font-size: 2.5rem;
+  color: var(--gold);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #2c241f;
+  color: #e2dcd5;
+  padding: 2.5rem 0 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--gold);
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+footer li {
+  margin: 0.4rem 0;
+}
+
+footer a {
+  color: #e2dcd5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .header-inner {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .grid {
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
