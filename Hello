@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Nhà Rang Cafe – Cà phê rang tươi</title>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo" id="logo-link">Nhà Rang <span>Cafe</span></a>
+    <nav>
+      <a href="#" data-page="home">Trang chủ</a>
+      <a href="#" data-page="menu">Menu</a>
+      <a href="#" data-page="about">Về chúng tôi</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- =========================  TRANG CHỦ ========================= -->
+  <div id="page-home" class="page active-page">
+    <section class="hero">
+      <h1>Nơi mỗi tách cafe kể một câu chuyện</h1>
+      <p>Hạt cà phê rang tươi mỗi ngày, không gian yên tĩnh, phục vụ tận tâm.</p>
+      <a href="#" data-page="menu" class="btn btn-primary">Xem thực đơn</a>
+      <a href="#" data-page="about" class="btn btn-outline">Tìm hiểu thêm</a>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Thực đơn nổi bật</h2>
+        <p>Mỗi món được pha chế thủ công</p>
+        <div class="grid">
+          <!-- thay thế Cà Phê Đen Đá bằng Bạc Xỉu -->
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop" alt="Bạc xỉu sữa tươi" width="300" height="200">
+            <div class="icon">🥛</div>
+            <h3>Bạc Xỉu Sữa Tươi</h3>
+            <p>Espresso nhẹ, sữa tươi nguyên kem, đá vảy mát lạnh.</p>
+            <span class="price">45.000₫</span>
+          </div>
+          <!-- thay thế Matcha Latte bằng Cold Brew Cam -->
+          <div class="card">
+            <img src="https://1000m.vn/wp-content/uploads/2024/05/Cold-Brew-Cam-Sa.jpg" alt="Cold Brew Cam" width="300" height="200">
+            <div class="icon">🧋</div>
+            <h3>Cold Brew Cam</h3>
+            <p>Cold brew ủ lạnh kết hợp nước cam tươi vắt, muối hồng.</p>
+            <span class="price">65.000₫</span>
+          </div>
+          <!-- giữ một món khác để thay thế, ví dụ Trà Chanh Sả -->
+          <div class="card">
+            <img src="https://lafreshdalat.vn/img/new/tra-chanh-gung-sa-41-5gl.png" alt="Trà chanh sả" width="300" height="200">
+            <div class="icon">🍋</div>
+            <h3>Trà Chanh Sả</h3>
+            <p>Trà xanh Thái Nguyên, sả tươi, chanh vắt, mát lạnh.</p>
+            <span class="price">40.000₫</span>
+          </div>
+        </div>
+        <div>
+          <a href="#" data-page="menu" class="btn btn-outline">Xem toàn bộ thực đơn</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Câu chuyện của chúng tôi</h2>
+        <p>
+          Nhà Rang Cafe ra đời năm 2019 từ tình yêu thuần túy với hạt cà phê Việt Nam.
+          Chúng tôi rang tươi mỗi tuần, không tồn kho, không phẩm màu.
+        </p>
+        <a href="#" data-page="about" class="btn btn-primary">Tìm hiểu thêm</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- =========================  MENU ========================= -->
+  <div id="page-menu" class="page">
+    <section class="hero">
+      <h1>☕ Thực đơn</h1>
+      <p>Tất cả đồ uống đều được pha chế thủ công từ hạt rang tươi.</p>
+    </section>
+
+    <!-- CÀ PHÊ (đã bỏ Cà Phê Đen Đá) -->
+    <section class="section">
+      <div class="container">
+        <h2>Cà phê</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop" alt="Bạc xỉu sữa tươi" width="300" height="200">
+            <div class="icon">🥛</div>
+            <h3>Bạc Xỉu Sữa Tươi</h3>
+            <p>Espresso nhẹ, sữa tươi nguyên kem, đá vảy mát lạnh.</p>
+            <span class="price">45.000₫</span>
+          </div>
+          <div class="card">
+            <img src="https://1000m.vn/wp-content/uploads/2024/05/Cold-Brew-Cam-Sa.jpg" alt="Cold Brew Cam" width="300" height="200">
+            <div class="icon">🧋</div>
+            <h3>Cold Brew Cam</h3>
+            <p>Cold brew ủ lạnh kết hợp nước cam tươi vắt, muối hồng.</p>
+            <span class="price">65.000₫</span>
+          </div>
+          <div class="card">
+            <img src="https://www.cubes-asia.com/storage/blogs/2024-11/phuong-phap-pour-over-va-cach-pha-ca-phe-pour.jpeg" alt="Pour Over Arabica" width="300" height="200">
+            <div class="icon">🫖</div>
+            <h3>Pour Over Arabica</h3>
+            <p>Hạt Arabica Cầu Đất, pha chiết thủ công phương pháp pour over.</p>
+            <span class="price">85.000₫</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRÀ & KHÁC (đã bỏ Matcha Latte) -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Trà & thức uống khác</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="https://lafreshdalat.vn/img/new/tra-chanh-gung-sa-41-5gl.png" alt="Trà chanh sả" width="300" height="200">
+            <div class="icon">🍋</div>
+            <h3>Trà Chanh Sả</h3>
+            <p>Trà xanh Thái Nguyên, sả tươi, chanh vắt, mát lạnh.</p>
+            <span class="price">40.000₫</span>
+          </div>
+          <div class="card">
+            <img src="https://drinkocany.com/wp-content/uploads/2023/11/tra-dau-tay.jpg" alt="Trà dâu tây" width="300" height="200">
+            <div class="icon">🍓</div>
+            <h3>Trà Dâu Tây</h3>
+            <p>Trà đen Darjeeling pha lạnh, dâu tây tươi, không đường.</p>
+            <span class="price">50.000₫</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BÁNH & ĐỒ ĂN NHẸ (giữ nguyên) -->
+    <section class="section">
+      <div class="container">
+        <h2>Bánh & đồ ăn nhẹ</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="https://cdn.hstatic.net/products/200000849803/tiramisu_2-02_f8ab61d3000d4a4e97745f22908f3b0c_1024x1024.png" alt="Bánh Tiramisu" width="300" height="200">
+            <div class="icon">🍰</div>
+            <h3>Bánh Tiramisu</h3>
+            <p>Làm thủ công mỗi sáng, mascarpone béo ngậy thấm đẫm espresso.</p>
+            <span class="price">75.000₫</span>
+          </div>
+          <div class="card">
+            <img src="https://product.hstatic.net/200000891321/product/croissant_bo_toi_8dec1753111e473ca96fcf31e51fd7d9.jpg" alt="Croissant bơ" width="300" height="200">
+            <div class="icon">🥐</div>
+            <h3>Croissant Bơ</h3>
+            <p>Croissant nướng giòn mỗi buổi sáng, bơ Pháp nguyên chất.</p>
+            <span class="price">45.000₫</span>
+          </div>
+          <div class="card">
+            <img src="https://classiccoffee.com.vn/upload/w0H9zt3BYP1L0hyIbUKtglkLe7ftg8jN81W.jpg" alt="Bánh Flan Cafe" width="300" height="200">
+            <div class="icon">🍮</div>
+            <h3>Bánh Flan Cafe</h3>
+            <p>Flan mềm mịn với lớp caramel đắng nhẹ từ espresso.</p>
+            <span class="price">40.000₫</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- =========================  VỀ CHÚNG TÔI ========================= -->
+  <div id="page-about" class="page">
+    <section class="hero">
+      <h1>🌱 Về chúng tôi</h1>
+      <p>Câu chuyện từ hạt giống đến tách cà phê trên bàn bạn.</p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Chúng tôi là ai?</h2>
+        <p>
+          Nhà Rang Cafe ra đời năm 2019 từ tình yêu thuần túy với hạt cà phê Việt Nam.
+          Người sáng lập — anh Minh — từng học rang cà phê tại Đà Lạt trong 3 năm
+          trước khi mang công thức về Hà Nội.
+        </p>
+        <p>
+          Chúng tôi tin rằng cà phê ngon bắt đầu từ hạt giống tốt, người nông dân tận tâm,
+          và quy trình rang xay được kiểm soát kỹ lưỡng. Vì vậy mỗi tuần chúng tôi đều
+          rang mẻ mới — không tồn kho, không phẩm màu.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Cam kết của chúng tôi</h2>
+        <div class="grid">
+          <div class="card"><div class="icon">🌿</div><h3>100% Việt Nam</h3><p>Toàn bộ hạt đến từ các vườn cà phê trong nước: Đắk Lắk, Cầu Đất, Sơn La.</p></div>
+          <div class="card"><div class="icon">🔥</div><h3>Rang tươi mỗi tuần</h3><p>Không tồn kho. Hạt rang xong trong 7 ngày là đến tay khách hàng.</p></div>
+          <div class="card"><div class="icon">🚫</div><h3>Không phụ gia</h3><p>Không phẩm màu, không hương liệu nhân tạo, không chất bảo quản.</p></div>
+          <div class="card"><div class="icon">🤝</div><h3>Thương mại công bằng</h3><p>Chúng tôi trả giá cao hơn thị trường 15% cho nông dân đối tác.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid">
+          <div class="card"><div>5+</div><h3>Năm hoạt động</h3><p>Từ một quán nhỏ 20m² đến không gian 3 tầng hiện tại.</p></div>
+          <div class="card"><div>12</div><h3>Loại hạt đặc sản</h3><p>Luôn có ít nhất 12 dòng hạt khác nhau để khách lựa chọn.</p></div>
+          <div class="card"><div>98%</div><h3>Khách hài lòng</h3><p>Dựa trên hơn 2.000 đánh giá trên Google Maps & Facebook.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Ghé thăm chúng tôi nhé!</h2>
+        <p>Chúng tôi mở cửa 7:00 – 22:00 hằng ngày tại 12 Trần Phú, Hà Nội.</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div><div class="footer-brand">Nhà Rang Cafe</div><p>Không gian cà phê dành cho những ai yêu cái chậm và cái thật.</p></div>
+      <div><h4>Khám phá</h4><ul><li><a href="#" data-page="menu">Thực đơn</a></li><li><a href="#" data-page="about">Về chúng tôi</a></li></ul></div>
+      <div><h4>Liên hệ</h4><ul><li>📍 12 Trần Phú, Hà Nội</li><li>📞 0912 345 678</li><li>🕐 07:00 – 22:00</li></ul></div>
+    </div>
+    <div class="footer-bottom">© 2025 Nhà Rang Cafe. Made with ☕ trong không gian Hà Nội.</div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    const pages = {
+      home: document.getElementById('page-home'),
+      menu: document.getElementById('page-menu'),
+      about: document.getElementById('page-about')
+    };
+    
+    function showPage(pageId) {
+      Object.values(pages).forEach(page => {
+        if (page) page.classList.remove('active-page');
+      });
+      if (pages[pageId]) pages[pageId].classList.add('active-page');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('[data-page]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const page = link.getAttribute('data-page');
+        if (page && pages[page]) showPage(page);
+      });
+    });
+
+    const logo = document.getElementById('logo-link');
+    if (logo) logo.addEventListener('click', (e) => { e.preventDefault(); showPage('home'); });
+  })();
+</script>
+</body>
+</html>
